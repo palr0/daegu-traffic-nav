@@ -51,6 +51,11 @@
 
     .leaflet-tile-pane { filter: saturate(0.6) brightness(0.68); }
 
+    /* Custom styles for the campus image overlay background */
+    .leaflet-bgOverlayPane-pane img {
+      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.75));
+    }
+
     .leaflet-control-zoom {
       border: 1px solid var(--border) !important;
       border-radius: 2px !important;
@@ -893,6 +898,17 @@ document.addEventListener('alpine:init', () => {
         'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
         { attribution: '© OpenStreetMap contributors © CARTO', subdomains: 'abcd', maxZoom: 19 }
       ).addTo(this.mapObj);
+
+      // Create a custom pane for the campus image overlay so it sits above tiles but below vectors
+      this.mapObj.createPane('bgOverlayPane');
+      this.mapObj.getPane('bgOverlayPane').style.zIndex = 250;
+
+      // Add the campus background image overlay (aligned with geographical coordinates)
+      L.imageOverlay('background_warped.png', [[35.88292, 128.7490], [35.89648, 128.7660]], {
+        pane: 'bgOverlayPane',
+        opacity: 1.0,
+        interactive: false
+      }).addTo(this.mapObj);
 
       this.addParkingLayer();
       this.addTrafficLayer();
