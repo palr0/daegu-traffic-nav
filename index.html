@@ -637,12 +637,12 @@ const TRAFFIC_GEOJSON = {
     {
       type: 'Feature',
       properties: { id:'T1', name:'정문 진입로', dir:'진입 (일방)', one_way:true, risk:1.8, vol:'높음', desc:'남단 정문에서 내부 분기점(회전교차로 A)까지 진입 전용 도로. 08:30–09:30 최대 혼잡.' },
-      geometry: { type:'LineString', coordinates:[[128.7575,35.8839],[128.7576,35.8844],[128.7576,35.8849],[128.7577,35.8854]] }
+      geometry: { type:'LineString', coordinates:[[128.7577,35.8836],[128.7577,35.8842],[128.7577,35.8848],[128.7577,35.8854]] }
     },
     {
       type: 'Feature',
       properties: { id:'T2', name:'정문 출구로', dir:'출구 (일방)', one_way:true, risk:1.5, vol:'높음', desc:'정문 출구 전용 차선. 17:30–18:30 최대 혼잡.' },
-      geometry: { type:'LineString', coordinates:[[128.7578,35.8854],[128.7577,35.8847],[128.7576,35.8843],[128.7576,35.8839]] }
+      geometry: { type:'LineString', coordinates:[[128.7578,35.8854],[128.7577,35.8848],[128.7577,35.8842],[128.7577,35.8836]] }
     },
     {
       type: 'Feature',
@@ -651,33 +651,33 @@ const TRAFFIC_GEOJSON = {
     },
     {
       type: 'Feature',
-      properties: { id:'T4', name:'복지관 앞 일방통행', dir:'동향 (일방)', one_way:true, risk:2.1, vol:'높음', desc:'캠퍼스 동서 간선 서쪽 구간 (서문→중앙). 보행자-차량 충돌 최고위험 구역.' },
-      geometry: { type:'LineString', coordinates:[[128.7507,35.8886],[128.7527,35.8892],[128.7540,35.8898],[128.7560,35.8896],[128.7577,35.8894],[128.7587,35.8893]] }
+      properties: { id:'T4', name:'동서 관통 간선 서쪽 구간', dir:'동향 (일방)', one_way:true, risk:2.1, vol:'높음', desc:'서문(10%,58%)→(17%,54%)→Node4(30%,49%)→(45%,46%)→Node3(57%,53%) 물결형 동서 간선. 보행자-차량 충돌 최고위험 구역.' },
+      geometry: { type:'LineString', coordinates:[[128.7507,35.8886],[128.7519,35.8892],[128.7541,35.8897],[128.7567,35.8902],[128.7587,35.8893]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T5', name:'중앙–동문 연결로', dir:'양방향', one_way:false, risk:1.6, vol:'중간', desc:'회전교차로 B에서 동남부 소형 로터리(Node 5)를 경유하여 동문까지 이어지는 주요 동부 도로.' },
-      geometry: { type:'LineString', coordinates:[[128.7587,35.8893],[128.7600,35.8879],[128.7616,35.8860],[128.7638,35.8878],[128.7652,35.8900]] }
+      properties: { id:'T5', name:'동서 관통 간선 동쪽 구간', dir:'양방향', one_way:false, risk:1.6, vol:'중간', desc:'Node3(57%,53%)→(68%,51%) 야구장 진입→(82%,46%) 동부 분기로→동문(95%,48%). 수업 전환 집중 혼잡.' },
+      geometry: { type:'LineString', coordinates:[[128.7587,35.8893],[128.7606,35.8896],[128.7629,35.8902],[128.7652,35.8900]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T6', name:'서문 북부 외곽로', dir:'북향', one_way:false, risk:0.9, vol:'낮음', desc:'서문에서 캠퍼스 북서부 외곽을 따라 올라가는 우회로.' },
-      geometry: { type:'LineString', coordinates:[[128.7507,35.8886],[128.7504,35.8897],[128.7505,35.8908],[128.7511,35.8918],[128.7521,35.8925],[128.7534,35.8929]] }
+      properties: { id:'T6', name:'남북 주간선 북쪽 연장', dir:'양방향', one_way:false, risk:0.9, vol:'낮음', desc:'Node2(51%,82%)→굴곡점(54%,68%)→Node3(57%,53%)→북쪽 녹지 끝점(59%,40%). 캠퍼스를 수직으로 관통하는 메인 남북 척추 도로.' },
+      geometry: { type:'LineString', coordinates:[[128.7577,35.8854],[128.7582,35.8872],[128.7587,35.8893],[128.7590,35.8911]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T7', name:'북부 외곽 순환로', dir:'반시계 (일방)', one_way:true, risk:0.7, vol:'낮음', desc:'캠퍼스 북쪽 외곽 벨트로드. 혼잡시간 권장 우회 경로.' },
-      geometry: { type:'LineString', coordinates:[[128.7534,35.8929],[128.7549,35.8931],[128.7565,35.8930],[128.7576,35.8927],[128.7585,35.8922]] }
+      properties: { id:'T7', name:'북서부 호수 순환로', dir:'양방향', one_way:false, risk:0.7, vol:'낮음', desc:'Node4(30%,49%)→북서 방향(25%,39%)→북서부 호수 외곽 곡선 구간(20%~24%,25%~33%)→북단 끝점(20%,20%). 캠퍼스 내 저속 이면도로.' },
+      geometry: { type:'LineString', coordinates:[[128.7541,35.8897],[128.7533,35.8912],[128.7527,35.8921],[128.7524,35.8929],[128.7524,35.8938]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T8', name:'동북부 외곽 순환로', dir:'남향 (일방)', one_way:true, risk:0.8, vol:'낮음', desc:'캠퍼스 북동쪽 외곽을 따라 동문 방향으로 내려오는 우회 순환 구간.' },
-      geometry: { type:'LineString', coordinates:[[128.7585,35.8922],[128.7609,35.8912],[128.7630,35.8905],[128.7647,35.8902],[128.7652,35.8900]] }
+      properties: { id:'T8', name:'북동부 외곽 연결로', dir:'양방향', one_way:false, risk:0.8, vol:'낮음', desc:'남북 주간선 북단(59%,40%)에서 동쪽 분기점(82%,46%)을 경유하여 동문(95%,48%)으로 연결되는 북동부 우회 도로.' },
+      geometry: { type:'LineString', coordinates:[[128.7590,35.8911],[128.7606,35.8903],[128.7629,35.8902],[128.7652,35.8900]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T9', name:'남부 동측 연결로', dir:'동향 (양방향)', one_way:false, risk:1.3, vol:'중간', desc:'정문 분기점(Node 2)에서 동남부 소형 로터리(Node 5, 7.4·7.7)까지 이어지는 캠퍼스 남부 횡단 도로.' },
-      geometry: { type:'LineString', coordinates:[[128.7577,35.8854],[128.7595,35.8856],[128.7616,35.8860]] }
+      properties: { id:'T9', name:'동남부 격자 루프선', dir:'양방향', one_way:false, risk:1.4, vol:'중간', desc:'Node2(51%,82%) 동쪽 분기→(65%,83%) 모퉁이→북향(65%,72%)→(63%,58%) 중앙 로터리 동측 합류. 건물 블록 사이 격자 이면도로.' },
+      geometry: { type:'LineString', coordinates:[[128.7577,35.8854],[128.7601,35.8852],[128.7601,35.8867],[128.7597,35.8886]] }
     }
   ]
 };
@@ -696,7 +696,7 @@ const INSIGHT_GEOJSON = {
     {
       type: 'Feature',
       properties: { id:'I2', loc:'중앙–동문 도로 병목', type:'병목 구간', risk:'high', ci:6.8, incidents:1, peak:['08:55–09:05','09:55–10:05','10:55–11:05'], rec:'수업 전환 시 우회 임시 안내판 설치. 중장기: VMS 전자 교통 안내판 도입 검토.', related:'T5' },
-      geometry: { type:'Point', coordinates:[128.7616, 35.8860] }
+      geometry: { type:'Point', coordinates:[128.7597, 35.8886] }
     },
     {
       type: 'Feature',
@@ -706,12 +706,12 @@ const INSIGHT_GEOJSON = {
     {
       type: 'Feature',
       properties: { id:'I4', loc:'서문 북부 경사로 구간', type:'기상 위험', risk:'moderate', ci:4.2, incidents:0, peak:['동절기 07:00–09:00 (결빙 시)'], rec:'동절기 결빙 취약 구간. 노면 열선 또는 자동 염화칼슘 살포 장치 검토.', related:'T6' },
-      geometry: { type:'Point', coordinates:[128.7505, 35.8907] }
+      geometry: { type:'Point', coordinates:[128.7519, 35.8889] }
     },
     {
       type: 'Feature',
       properties: { id:'I5', loc:'동문 전방 접근로', type:'우회 대안', risk:'low', ci:1.5, incidents:0, peak:['08:30–09:30 (정문 혼잡 시)'], rec:'정문 포화 시 동문 경유 공과대학 직통 경로. 우측 통행 유도선 도색 권고.', related:'T5,T9' },
-      geometry: { type:'Point', coordinates:[128.7638, 35.8878] }
+      geometry: { type:'Point', coordinates:[128.7629, 35.8902] }
     }
   ]
 };
@@ -1093,7 +1093,7 @@ document.addEventListener('alpine:init', () => {
     // ── 출입문 마커 ───────────────────────────────────────────────────────
     addGateMarkers() {
       const gates = [
-        { name:'정문', ll:[35.8839, 128.7575], desc:'남단 메인 출입구 · 하양읍 방면', cong:'high' },
+        { name:'정문', ll:[35.8836, 128.7577], desc:'남단 메인 출입구 · 하양읍 방면', cong:'high' },
         { name:'동문', ll:[35.8900, 128.7652], desc:'동측 출입구 · 내리리 방면',     cong:'mid' },
         { name:'서문', ll:[35.8886, 128.7507], desc:'서측 출입구 · 우회 진입',       cong:'low' },
       ];
