@@ -534,12 +534,12 @@ const PARKING_GEOJSON = {
         disabled_spaces: 8, ev_chargers: 4, shuttle_stop: false,
         saturation_index: 0.82,
         peak_hours: ['08:30–09:30', '17:30–18:30'],
-        recommended_gates: ['동문', '서문']
+        recommended_gates: ['동문']
       },
       geometry: {
         type: 'Polygon',
-        coordinates: [[[128.7600,35.8920],[128.7616,35.8920],
-          [128.7616,35.8910],[128.7600,35.8910],[128.7600,35.8920]]]
+        coordinates: [[[128.7622,35.8906],[128.7637,35.8906],
+          [128.7637,35.8896],[128.7622,35.8896],[128.7622,35.8906]]]
       }
     },
     {
@@ -550,12 +550,12 @@ const PARKING_GEOJSON = {
         disabled_spaces: 5, ev_chargers: 2, shuttle_stop: false,
         saturation_index: 0.63,
         peak_hours: ['09:00–10:00', '13:00–14:00'],
-        recommended_gates: ['정문', '서문']
+        recommended_gates: ['정문', '동문']
       },
       geometry: {
         type: 'Polygon',
-        coordinates: [[[128.7555,35.8902],[128.7568,35.8902],
-          [128.7568,35.8892],[128.7555,35.8892],[128.7555,35.8902]]]
+        coordinates: [[[128.7593,35.8910],[128.7607,35.8910],
+          [128.7607,35.8900],[128.7593,35.8900],[128.7593,35.8910]]]
       }
     },
     {
@@ -566,12 +566,12 @@ const PARKING_GEOJSON = {
         disabled_spaces: 4, ev_chargers: 2, shuttle_stop: true,
         saturation_index: 0.34,
         peak_hours: ['08:30–09:00'],
-        recommended_gates: ['서문']
+        recommended_gates: ['정문']
       },
       geometry: {
         type: 'Polygon',
-        coordinates: [[[128.7583,35.8878],[128.7596,35.8878],
-          [128.7596,35.8868],[128.7583,35.8868],[128.7583,35.8878]]]
+        coordinates: [[[128.7548,35.8878],[128.7562,35.8878],
+          [128.7562,35.8868],[128.7548,35.8868],[128.7548,35.8878]]]
       }
     },
     {
@@ -586,8 +586,8 @@ const PARKING_GEOJSON = {
       },
       geometry: {
         type: 'Polygon',
-        coordinates: [[[128.7536,35.8902],[128.7552,35.8902],
-          [128.7552,35.8892],[128.7536,35.8892],[128.7536,35.8902]]]
+        coordinates: [[[128.7528,35.8906],[128.7544,35.8906],
+          [128.7544,35.8895],[128.7528,35.8895],[128.7528,35.8906]]]
       }
     },
     {
@@ -602,8 +602,8 @@ const PARKING_GEOJSON = {
       },
       geometry: {
         type: 'Polygon',
-        coordinates: [[[128.7572,35.8908],[128.7582,35.8908],
-          [128.7582,35.8900],[128.7572,35.8900],[128.7572,35.8908]]]
+        coordinates: [[[128.7558,35.8903],[128.7570,35.8903],
+          [128.7570,35.8895],[128.7558,35.8895],[128.7558,35.8903]]]
       }
     }
   ]
@@ -622,7 +622,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7540,35.8845],[128.7542,35.8858],[128.7545,35.8872],[128.7548,35.8882]]
+        coordinates: [[128.7540,35.8845],[128.7541,35.8852],[128.7542,35.8858],[128.7543,35.8865],[128.7545,35.8873]]
       }
     },
     {
@@ -635,7 +635,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7550,35.8884],[128.7546,35.8868],[128.7543,35.8855],[128.7538,35.8845]]
+        coordinates: [[128.7548,35.8875],[128.7546,35.8865],[128.7544,35.8855],[128.7541,35.8845]]
       }
     },
     {
@@ -648,7 +648,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7548,35.8882],[128.7552,35.8888],[128.7555,35.8895],[128.7558,35.8900]]
+        coordinates: [[128.7545,35.8873],[128.7548,35.8880],[128.7551,35.8888],[128.7555,35.8895],[128.7558,35.8901]]
       }
     },
     {
@@ -661,7 +661,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7558,35.8900],[128.7565,35.8904],[128.7572,35.8906],[128.7580,35.8905]]
+        coordinates: [[128.7558,35.8901],[128.7566,35.8903],[128.7574,35.8904],[128.7583,35.8903]]
       }
     },
     {
@@ -674,7 +674,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7580,35.8905],[128.7584,35.8908],[128.7588,35.8912],[128.7592,35.8916]]
+        coordinates: [[128.7583,35.8903],[128.7590,35.8908],[128.7598,35.8912],[128.7607,35.8914]]
       }
     },
     {
@@ -687,7 +687,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7592,35.8916],[128.7598,35.8918],[128.7604,35.8918],[128.7609,35.8916]]
+        coordinates: [[128.7607,35.8914],[128.7618,35.8914],[128.7628,35.8910],[128.7636,35.8902]]
       }
     },
     {
@@ -700,7 +700,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7642,35.8870],[128.7635,35.8878],[128.7628,35.8884],[128.7620,35.8889]]
+        coordinates: [[128.7642,35.8875],[128.7634,35.8882],[128.7624,35.8888],[128.7612,35.8893]]
       }
     },
     {
@@ -713,7 +713,7 @@ const TRAFFIC_GEOJSON = {
       },
       geometry: {
         type: 'LineString',
-        coordinates: [[128.7505,35.8890],[128.7512,35.8893],[128.7522,35.8895],[128.7532,35.8896]]
+        coordinates: [[128.7505,35.8893],[128.7513,35.8896],[128.7522,35.8898],[128.7533,35.8899]]
       }
     },
     {
@@ -727,8 +727,9 @@ const TRAFFIC_GEOJSON = {
       geometry: {
         type: 'LineString',
         coordinates: [
-          [128.7532,35.8896],[128.7537,35.8910],[128.7548,35.8922],
-          [128.7562,35.8927],[128.7582,35.8928],[128.7602,35.8923]
+          [128.7533,35.8899],[128.7538,35.8910],[128.7546,35.8918],
+          [128.7558,35.8924],[128.7572,35.8927],[128.7582,35.8928],
+          [128.7598,35.8924],[128.7610,35.8916],[128.7618,35.8906]
         ]
       }
     }
@@ -748,7 +749,7 @@ const INSIGHT_GEOJSON = {
         rec: '신호등 설치 또는 15 km/h 강제 감속 구간 지정. 속도저감 노면표시 적용 권고.',
         affected: 'T4'
       },
-      geometry: { type: 'Point', coordinates: [128.7572, 35.8904] }
+      geometry: { type: 'Point', coordinates: [128.7568, 35.8903] }
     },
     {
       type: 'Feature',
@@ -760,19 +761,19 @@ const INSIGHT_GEOJSON = {
         rec: '수업 전환 시 우회 임시 안내판 설치. 중장기: VMS 전자 교통 안내판 도입.',
         affected: 'T5'
       },
-      geometry: { type: 'Point', coordinates: [128.7584, 35.8908] }
+      geometry: { type: 'Point', coordinates: [128.7592, 35.8910] }
     },
     {
       type: 'Feature',
       properties: {
-        id: 'I3', loc: '정문–공과대학 사거리',
+        id: 'I3', loc: '동문–공과대학 합류점',
         issue_type: 'intersection_conflict', risk: 'high',
         conflict_index: 7.1, annual_incidents: 2,
         peak_hours: ['08:30–09:30'],
         rec: '일방통행 전환 시 셔틀 정류장 재조정. 좌회전 금지 표지 추가 설치 필요.',
-        affected: 'T3,T6'
+        affected: 'T6,T7'
       },
-      geometry: { type: 'Point', coordinates: [128.7592, 35.8897] }
+      geometry: { type: 'Point', coordinates: [128.7618, 35.8893] }
     },
     {
       type: 'Feature',
@@ -784,7 +785,7 @@ const INSIGHT_GEOJSON = {
         rec: '동절기 결빙 취약 구간. 노면 열선 또는 자동 염화칼슘 살포 장치 검토.',
         affected: 'T8'
       },
-      geometry: { type: 'Point', coordinates: [128.7512, 35.8893] }
+      geometry: { type: 'Point', coordinates: [128.7513, 35.8896] }
     },
     {
       type: 'Feature',
@@ -796,7 +797,7 @@ const INSIGHT_GEOJSON = {
         rec: '정문 포화 시 동문 경유 공과대학 직통 경로. 우측 통행 유도선 도색 권고.',
         affected: 'T7'
       },
-      geometry: { type: 'Point', coordinates: [128.7632, 35.8882] }
+      geometry: { type: 'Point', coordinates: [128.7636, 35.8879] }
     }
   ]
 };
