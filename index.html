@@ -579,7 +579,7 @@ const PARKING_GEOJSON = {
         peak_hours: ['08:30–09:30', '17:30–18:30'],
         gates: ['동문']
       },
-      geometry: { type: 'Polygon', coordinates: [[[128.7618,35.8898],[128.7632,35.8898],[128.7632,35.8888],[128.7618,35.8888],[128.7618,35.8898]]] }
+      geometry: { type: 'Polygon', coordinates: [[[128.7597,35.8875],[128.7613,35.8875],[128.7613,35.8865],[128.7597,35.8865],[128.7597,35.8875]]] }
     },
     {
       type: 'Feature',
@@ -590,7 +590,7 @@ const PARKING_GEOJSON = {
         peak_hours: ['09:00–10:00', '13:00–14:00'],
         gates: ['정문', '동문']
       },
-      geometry: { type: 'Polygon', coordinates: [[[128.7578,35.8898],[128.7592,35.8898],[128.7592,35.8888],[128.7578,35.8888],[128.7578,35.8898]]] }
+      geometry: { type: 'Polygon', coordinates: [[[128.7586,35.8893],[128.7598,35.8893],[128.7598,35.8883],[128.7586,35.8883],[128.7586,35.8893]]] }
     },
     {
       type: 'Feature',
@@ -601,7 +601,7 @@ const PARKING_GEOJSON = {
         peak_hours: ['08:30–09:00'],
         gates: ['정문']
       },
-      geometry: { type: 'Polygon', coordinates: [[[128.7543,35.8872],[128.7555,35.8872],[128.7555,35.8862],[128.7543,35.8862],[128.7543,35.8872]]] }
+      geometry: { type: 'Polygon', coordinates: [[[128.7540,35.8879],[128.7552,35.8879],[128.7552,35.8869],[128.7540,35.8869],[128.7540,35.8879]]] }
     },
     {
       type: 'Feature',
@@ -612,7 +612,7 @@ const PARKING_GEOJSON = {
         peak_hours: ['08:00–10:00', '16:30–18:00'],
         gates: ['정문', '서문']
       },
-      geometry: { type: 'Polygon', coordinates: [[[128.7518,35.8892],[128.7534,35.8892],[128.7534,35.8882],[128.7518,35.8882],[128.7518,35.8892]]] }
+      geometry: { type: 'Polygon', coordinates: [[[128.7521,35.8926],[128.7535,35.8926],[128.7535,35.8916],[128.7521,35.8916],[128.7521,35.8926]]] }
     },
     {
       type: 'Feature',
@@ -623,7 +623,7 @@ const PARKING_GEOJSON = {
         peak_hours: ['11:30–13:30'],
         gates: ['정문']
       },
-      geometry: { type: 'Polygon', coordinates: [[[128.7553,35.8895],[128.7565,35.8895],[128.7565,35.8886],[128.7553,35.8886],[128.7553,35.8895]]] }
+      geometry: { type: 'Polygon', coordinates: [[[128.7569,35.8898],[128.7581,35.8898],[128.7581,35.8888],[128.7569,35.8888],[128.7569,35.8898]]] }
     }
   ]
 };
@@ -636,48 +636,48 @@ const TRAFFIC_GEOJSON = {
   features: [
     {
       type: 'Feature',
-      properties: { id:'T1', name:'정문 진입로', dir:'진입 (일방)', one_way:true, risk:1.8, vol:'높음', desc:'하양읍 방면 정문 진입 주도로. 08:30–09:30 최대 혼잡.' },
-      geometry: { type:'LineString', coordinates:[[128.7540,35.8845],[128.7541,35.8852],[128.7542,35.8858],[128.7543,35.8865],[128.7545,35.8873]] }
+      properties: { id:'T1', name:'정문 진입로', dir:'진입 (일방)', one_way:true, risk:1.8, vol:'높음', desc:'남단 정문에서 내부 분기점(회전교차로 A)까지 진입 전용 도로. 08:30–09:30 최대 혼잡.' },
+      geometry: { type:'LineString', coordinates:[[128.7572,35.8836],[128.7573,35.8843],[128.7575,35.8849],[128.7577,35.8854]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T2', name:'정문 출구로', dir:'출구 (일방)', one_way:true, risk:1.5, vol:'높음', desc:'정문 출구 전용. 17:30–18:30 최대 혼잡.' },
-      geometry: { type:'LineString', coordinates:[[128.7548,35.8873],[128.7546,35.8864],[128.7544,35.8855],[128.7541,35.8845]] }
+      properties: { id:'T2', name:'정문 출구로', dir:'출구 (일방)', one_way:true, risk:1.5, vol:'높음', desc:'정문 출구 전용 차선. 17:30–18:30 최대 혼잡.' },
+      geometry: { type:'LineString', coordinates:[[128.7578,35.8854],[128.7576,35.8847],[128.7574,35.8840],[128.7573,35.8836]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T3', name:'정문–서문 연결로', dir:'양방향', one_way:false, risk:1.2, vol:'중간', desc:'정문 분기점에서 서문까지 이어지는 캠퍼스 서쪽 간선 도로.' },
-      geometry: { type:'LineString', coordinates:[[128.7540,35.8874],[128.7530,35.8880],[128.7520,35.8885],[128.7510,35.8889],[128.7505,35.8893]] }
+      properties: { id:'T3', name:'정문–서문 연결로', dir:'양방향', one_way:false, risk:1.2, vol:'중간', desc:'분기점(회전교차로 A)에서 서문(서단)까지 이어지는 캠퍼스 서쪽 연결 도로.' },
+      geometry: { type:'LineString', coordinates:[[128.7577,35.8854],[128.7561,35.8863],[128.7544,35.8873],[128.7524,35.8879],[128.7507,35.8886]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T4', name:'복지관 앞 일방통행', dir:'동향 (일방)', one_way:true, risk:2.1, vol:'높음', desc:'복지관 앞 일방통행. 보행자-차량 충돌 최고위험 구역.' },
-      geometry: { type:'LineString', coordinates:[[128.7540,35.8874],[128.7552,35.8882],[128.7564,35.8889],[128.7576,35.8893],[128.7590,35.8893]] }
+      properties: { id:'T4', name:'복지관 앞 일방통행', dir:'동향 (일방)', one_way:true, risk:2.1, vol:'높음', desc:'캠퍼스 동서 간선 서쪽 구간 (서문→중앙). 보행자-차량 충돌 최고위험 구역.' },
+      geometry: { type:'LineString', coordinates:[[128.7507,35.8886],[128.7527,35.8892],[128.7541,35.8897],[128.7560,35.8895],[128.7577,35.8893],[128.7587,35.8893]] }
     },
     {
       type: 'Feature',
-      properties: { id:'T5', name:'중앙–동문 연결로', dir:'양방향', one_way:false, risk:1.6, vol:'중간', desc:'캠퍼스 중앙에서 동문까지 이어지는 주요 내부 도로. 수업 전환 집중 혼잡.' },
-      geometry: { type:'LineString', coordinates:[[128.7590,35.8893],[128.7604,35.8887],[128.7618,35.8882],[128.7630,35.8878],[128.7642,35.8875]] }
+      properties: { id:'T5', name:'중앙–동문 연결로', dir:'양방향', one_way:false, risk:1.6, vol:'중간', desc:'회전교차로 B에서 동문까지 이어지는 동서 간선 동쪽 구간. 수업 전환 집중 혼잡.' },
+      geometry: { type:'LineString', coordinates:[[128.7587,35.8893],[128.7608,35.8896],[128.7632,35.8899],[128.7652,35.8900]] }
     },
     {
       type: 'Feature',
       properties: { id:'T6', name:'서문 북부 외곽로', dir:'북향', one_way:false, risk:0.9, vol:'낮음', desc:'서문에서 캠퍼스 북서부 외곽을 따라 올라가는 우회로.' },
-      geometry: { type:'LineString', coordinates:[[128.7505,35.8893],[128.7504,35.8902],[128.7506,35.8912],[128.7512,35.8920],[128.7522,35.8926],[128.7535,35.8928]] }
+      geometry: { type:'LineString', coordinates:[[128.7507,35.8886],[128.7504,35.8897],[128.7505,35.8908],[128.7511,35.8918],[128.7521,35.8925],[128.7534,35.8929]] }
     },
     {
       type: 'Feature',
       properties: { id:'T7', name:'북부 외곽 순환로', dir:'반시계 (일방)', one_way:true, risk:0.7, vol:'낮음', desc:'캠퍼스 북쪽 외곽 벨트로드. 혼잡시간 권장 우회 경로.' },
-      geometry: { type:'LineString', coordinates:[[128.7535,35.8928],[128.7550,35.8929],[128.7565,35.8929],[128.7575,35.8928],[128.7582,35.8928]] }
+      geometry: { type:'LineString', coordinates:[[128.7534,35.8929],[128.7549,35.8931],[128.7565,35.8930],[128.7576,35.8927],[128.7585,35.8922]] }
     },
     {
       type: 'Feature',
       properties: { id:'T8', name:'동북부 외곽 순환로', dir:'남향 (일방)', one_way:true, risk:0.8, vol:'낮음', desc:'캠퍼스 북동쪽 외곽을 따라 동문 방향으로 내려오는 우회 순환 구간.' },
-      geometry: { type:'LineString', coordinates:[[128.7582,35.8928],[128.7600,35.8922],[128.7618,35.8912],[128.7632,35.8900],[128.7640,35.8887],[128.7642,35.8875]] }
+      geometry: { type:'LineString', coordinates:[[128.7585,35.8922],[128.7609,35.8912],[128.7630,35.8905],[128.7647,35.8902],[128.7652,35.8900]] }
     },
     {
       type: 'Feature',
       properties: { id:'T9', name:'동문 내부 진입로', dir:'양방향', one_way:false, risk:1.1, vol:'낮음', desc:'동문에서 캠퍼스 내부로 진입하는 도로. 정문 혼잡 시 대안 경로.' },
-      geometry: { type:'LineString', coordinates:[[128.7642,35.8875],[128.7633,35.8880],[128.7622,35.8885],[128.7610,35.8889],[128.7598,35.8891],[128.7590,35.8893]] }
+      geometry: { type:'LineString', coordinates:[[128.7652,35.8900],[128.7633,35.8897],[128.7615,35.8894],[128.7598,35.8893],[128.7587,35.8893]] }
     }
   ]
 };
@@ -691,27 +691,27 @@ const INSIGHT_GEOJSON = {
     {
       type: 'Feature',
       properties: { id:'I1', loc:'복지관 앞 횡단보도', type:'보행자 충돌', risk:'critical', ci:9.2, incidents:3, peak:['08:50–09:10','11:50–12:10','17:50–18:10'], rec:'신호등 설치 또는 15 km/h 강제 감속 구간 지정 필요. 속도저감 노면표시 적용 권고.', related:'T4' },
-      geometry: { type:'Point', coordinates:[128.7564, 35.8889] }
+      geometry: { type:'Point', coordinates:[128.7541, 35.8895] }
     },
     {
       type: 'Feature',
       properties: { id:'I2', loc:'중앙–동문 도로 병목', type:'병목 구간', risk:'high', ci:6.8, incidents:1, peak:['08:55–09:05','09:55–10:05','10:55–11:05'], rec:'수업 전환 시 우회 임시 안내판 설치. 중장기: VMS 전자 교통 안내판 도입 검토.', related:'T5' },
-      geometry: { type:'Point', coordinates:[128.7604, 35.8887] }
+      geometry: { type:'Point', coordinates:[128.7608, 35.8896] }
     },
     {
       type: 'Feature',
-      properties: { id:'I3', loc:'정문 분기 사거리', type:'교차로 충돌', risk:'high', ci:7.1, incidents:2, peak:['08:30–09:30'], rec:'정문 진입 후 서문·동문 방향 분기 혼잡. 교통 유도원 배치 권고.', related:'T1,T3,T4' },
-      geometry: { type:'Point', coordinates:[128.7540, 35.8874] }
+      properties: { id:'I3', loc:'정문 분기 사거리', type:'교차로 충돌', risk:'high', ci:7.1, incidents:2, peak:['08:30–09:30'], rec:'정문 진입 분기점(회전교차로 A) 혼잡. 교통 유도원 배치 권고.', related:'T1,T2,T3' },
+      geometry: { type:'Point', coordinates:[128.7577, 35.8854] }
     },
     {
       type: 'Feature',
-      properties: { id:'I4', loc:'서문 경사로 구간', type:'기상 위험', risk:'moderate', ci:4.2, incidents:0, peak:['동절기 07:00–09:00 (결빙 시)'], rec:'동절기 결빙 취약 구간. 노면 열선 또는 자동 염화칼슘 살포 장치 검토.', related:'T6' },
-      geometry: { type:'Point', coordinates:[128.7506, 35.8912] }
+      properties: { id:'I4', loc:'서문 북부 경사로 구간', type:'기상 위험', risk:'moderate', ci:4.2, incidents:0, peak:['동절기 07:00–09:00 (결빙 시)'], rec:'동절기 결빙 취약 구간. 노면 열선 또는 자동 염화칼슘 살포 장치 검토.', related:'T6' },
+      geometry: { type:'Point', coordinates:[128.7505, 35.8907] }
     },
     {
       type: 'Feature',
       properties: { id:'I5', loc:'동문 전방 접근로', type:'우회 대안', risk:'low', ci:1.5, incidents:0, peak:['08:30–09:30 (정문 혼잡 시)'], rec:'정문 포화 시 동문 경유 공과대학 직통 경로. 우측 통행 유도선 도색 권고.', related:'T5,T9' },
-      geometry: { type:'Point', coordinates:[128.7633, 35.8880] }
+      geometry: { type:'Point', coordinates:[128.7633, 35.8897] }
     }
   ]
 };
@@ -720,21 +720,21 @@ const INSIGHT_GEOJSON = {
 // 셔틀 정류장
 // ═══════════════════════════════════════════════════════════════════════════
 const SHUTTLE_STOPS = [
-  { id:'S1', name:'본관 정류장',   ll:[35.8896, 128.7527], routes:['A노선','C노선'], interval:15 },
-  { id:'S2', name:'복지관 정류장', ll:[35.8891, 128.7562], routes:['A노선','B노선'], interval:15 },
-  { id:'S3', name:'사범대 정류장', ll:[35.8868, 128.7547], routes:['B노선'],         interval:30 },
+  { id:'S1', name:'본관 정류장',   ll:[35.8921, 128.7527], routes:['A노선','C노선'], interval:15 },
+  { id:'S2', name:'복지관 정류장', ll:[35.8891, 128.7572], routes:['A노선','B노선'], interval:15 },
+  { id:'S3', name:'사범대 정류장', ll:[35.8873, 128.7548], routes:['B노선'],         interval:30 },
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════
 // 건물 POI
 // ═══════════════════════════════════════════════════════════════════════════
 const BUILDINGS = [
-  { name:'본관',       ll:[35.8899, 128.7537] },
-  { name:'도서관',     ll:[35.8906, 128.7590] },
-  { name:'학생복지관', ll:[35.8894, 128.7564] },
-  { name:'공과대학',   ll:[35.8896, 128.7625] },
-  { name:'사범대학',   ll:[35.8869, 128.7551] },
-  { name:'사회과학대', ll:[35.8910, 128.7604] },
+  { name:'본관',       ll:[35.8922, 128.7528] },
+  { name:'도서관',     ll:[35.8912, 128.7568] },
+  { name:'학생복지관', ll:[35.8892, 128.7573] },
+  { name:'공과대학',   ll:[35.8870, 128.7605] },
+  { name:'사범대학',   ll:[35.8873, 128.7546] },
+  { name:'사회과학대', ll:[35.8889, 128.7592] },
 ];
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -1093,9 +1093,9 @@ document.addEventListener('alpine:init', () => {
     // ── 출입문 마커 ───────────────────────────────────────────────────────
     addGateMarkers() {
       const gates = [
-        { name:'정문', ll:[35.8858, 128.7542], desc:'메인 출입구 · 하양읍 방면', cong:'high' },
-        { name:'동문', ll:[35.8875, 128.7642], desc:'동측 출입구 · 내리리 방면', cong:'mid' },
-        { name:'서문', ll:[35.8893, 128.7505], desc:'서측 출입구 · 우회 진입',   cong:'low' },
+        { name:'정문', ll:[35.8836, 128.7572], desc:'남단 메인 출입구 · 하양읍 방면', cong:'high' },
+        { name:'동문', ll:[35.8900, 128.7652], desc:'동측 출입구 · 내리리 방면',     cong:'mid' },
+        { name:'서문', ll:[35.8886, 128.7507], desc:'서측 출입구 · 우회 진입',       cong:'low' },
       ];
       const congColor = { high:'#ef4444', mid:'#f59e0b', low:'#10b981' };
       const congLabel = { high:'혼잡', mid:'보통', low:'원활' };
